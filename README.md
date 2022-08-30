@@ -36,9 +36,7 @@ This sdk builds on the [Lukso Testnet](https://docs.lukso.tech/networks/l16-test
 To use the SDK:
 
 ```javascript
-import SocialRecover from 'lsp-social-recovery-js'
-
-
+import SocialRecover from 'lsp-social-recovery'
 
 const providerUrl = 'https://rpc.l16.lukso.network'
 
@@ -83,7 +81,6 @@ const main = async () => {
   }
 }
 ```
-
 ### 3. Recover account ownership( Signature verification)
 a. Signature submission and verification
 First strategy in recovering account ownership after initialization is to let added `superGuardians` sign messages and submit the message to be stored in the contract:
@@ -119,10 +116,7 @@ await socialRecovery.voteToRecover(recoverProcessId)
 // after guardian voting:
 await socialRecover.recoverOwnership()
 ```
-### Using with a custom Provider with `mnemonic` or `privateKey`
 
-```javascript
-```
 ## Development
 
 **Setup**

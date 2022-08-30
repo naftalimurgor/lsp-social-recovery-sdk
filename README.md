@@ -20,11 +20,11 @@ Youtube:
 Installation
 
 ```bash
-yarn add social-recovery-js
+yarn add lsp-social-recovery
 ```
 or if using npm
 ```bash
-npm install --save social-recovery-js
+npm install --save lsp-social-recovery
 ```
 
 Install [web3](https://github.com/ethereum/web3.js) too if not yet already.

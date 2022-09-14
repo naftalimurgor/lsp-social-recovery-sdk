@@ -36,7 +36,7 @@ This sdk builds on the [Lukso Testnet](https://docs.lukso.tech/networks/l16-test
 To use the SDK:
 
 ```javascript
-import SocialRecover from 'lsp-social-recovery'
+import { SocialRecover } from 'lsp-social-recovery'
 
 const providerUrl = 'https://rpc.l16.lukso.network'
 
@@ -66,7 +66,7 @@ const socialRecovery = new SocialRecovery(options)
 
 ```javascript
 const main = async () => {
-  const superGuardians = []
+  const superGuardiansAddresses = ['0xc4d893da164617bAFE9b013cd8d04B2b582e76D7's]
   try {
     await socialRecovery.deploy()
     // set secret phrase
